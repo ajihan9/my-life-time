@@ -1,0 +1,16 @@
+import streamlit as st
+
+# [배경 꾸미기 소스] 스트림릿 전체 배경에 모눈종이 패턴 넣기
+st.markdown("""
+    <style>
+    /* 스트림릿 메인 화면 영역을 선택 */
+    .stApp {
+        background-image: 
+            linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+        background-size: 20px 20px; /* 모눈 크기 */
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+# 기존 app.py 코드 계속...
